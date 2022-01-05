@@ -19,7 +19,7 @@ public abstract class GenericService<T>  {
 
     T update(Integer id, T obj) throws Exception {
 
-        if (!map.get(id).equals(null)) {
+        if (map.get(id) == null) {
             throw new Exception("404 Not Found!");
         }
 
@@ -31,7 +31,7 @@ public abstract class GenericService<T>  {
 
     T readById(Integer id) throws Exception {
 
-        if (!map.get(id).equals(null)) {
+        if (map.get(id) == null) {
             throw new Exception("404 Not Found!");
         }
 

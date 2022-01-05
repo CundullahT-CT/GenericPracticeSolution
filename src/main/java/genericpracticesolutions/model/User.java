@@ -1,4 +1,4 @@
-package genericpracticesolutions.pojo;
+package genericpracticesolutions.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

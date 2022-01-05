@@ -1,9 +1,9 @@
 package genericpracticesolutions.bootstrap;
 
-import genericpracticesolutions.pojo.Project;
-import genericpracticesolutions.pojo.Role;
-import genericpracticesolutions.pojo.Task;
-import genericpracticesolutions.pojo.User;
+import genericpracticesolutions.model.Project;
+import genericpracticesolutions.model.Role;
+import genericpracticesolutions.model.Task;
+import genericpracticesolutions.model.User;
 import genericpracticesolutions.service.IGenericService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

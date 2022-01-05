@@ -1,6 +1,6 @@
 package genericpracticesolutions.service.implementation;
 
-import genericpracticesolutions.pojo.Role;
+import genericpracticesolutions.model.Role;
 import genericpracticesolutions.service.IGenericService;
 import org.springframework.stereotype.Service;
 

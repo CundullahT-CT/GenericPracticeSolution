@@ -1,6 +1,6 @@
 package genericpracticesolutions.service.implementation;
 
-import genericpracticesolutions.pojo.Task;
+import genericpracticesolutions.model.Task;
 import genericpracticesolutions.service.IGenericService;
 import org.springframework.stereotype.Service;
 
