@@ -2,7 +2,7 @@ package genericpracticesolutions.service;
 
 import java.util.List;
 
-public interface IGenericService<T> {
+public interface GenericService<T> {
 
     T create(T obj);
 

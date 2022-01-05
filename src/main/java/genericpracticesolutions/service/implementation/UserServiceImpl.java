@@ -1,13 +1,13 @@
 package genericpracticesolutions.service.implementation;
 
 import genericpracticesolutions.model.User;
-import genericpracticesolutions.service.IGenericService;
+import genericpracticesolutions.service.GenericService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class UserService extends GenericService<User> implements IGenericService<User> {
+public class UserServiceImpl extends GenericServiceImpl<User> implements GenericService<User> {
 
     @Override
     public User create(User obj) {

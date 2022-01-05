@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public abstract class GenericService<T>  {
+public abstract class GenericServiceImpl<T>  {
 
     protected Map<Integer, T> map = new HashMap<>();
 

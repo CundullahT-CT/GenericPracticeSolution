@@ -4,7 +4,7 @@ import genericpracticesolutions.model.Project;
 import genericpracticesolutions.model.Role;
 import genericpracticesolutions.model.Task;
 import genericpracticesolutions.model.User;
-import genericpracticesolutions.service.IGenericService;
+import genericpracticesolutions.service.GenericService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,13 +15,13 @@ import java.util.List;
 @Component
 public class DataGenerator implements CommandLineRunner {
 
-    IGenericService<Role> roleService;
-    IGenericService<User> userService;
-    IGenericService<Project> projectService;
-    IGenericService<Task> taskService;
+    GenericService<Role> roleService;
+    GenericService<User> userService;
+    GenericService<Project> projectService;
+    GenericService<Task> taskService;
 
-    public DataGenerator(IGenericService<Role> roleService, IGenericService<User> userService,
-                         IGenericService<Project> projectService, IGenericService<Task> taskService) {
+    public DataGenerator(GenericService<Role> roleService, GenericService<User> userService,
+                         GenericService<Project> projectService, GenericService<Task> taskService) {
         this.roleService = roleService;
         this.userService = userService;
         this.projectService = projectService;

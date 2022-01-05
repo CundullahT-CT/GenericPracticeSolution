@@ -1,36 +1,36 @@
 package genericpracticesolutions.service.implementation;
 
-import genericpracticesolutions.model.Task;
-import genericpracticesolutions.service.IGenericService;
+import genericpracticesolutions.model.Role;
+import genericpracticesolutions.service.GenericService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class TaskService extends GenericService<Task> implements IGenericService<Task> {
+public class RoleServiceImpl extends GenericServiceImpl<Role> implements GenericService<Role> {
 
     @Override
-    public Task create(Task obj) {
+    public Role create(Role obj) {
         return super.create(obj.getId(), obj);
     }
 
     @Override
-    public Task update(Task obj) throws Exception {
+    public Role update(Role obj) throws Exception {
         return super.update(obj.getId(), obj);
     }
 
     @Override
-    public Task readById(Integer id) throws Exception {
+    public Role readById(Integer id) throws Exception {
         return super.readById(id);
     }
 
     @Override
-    public List<Task> readAll() {
+    public List<Role> readAll() {
         return super.readAll();
     }
 
     @Override
-    public void delete(Task obj) throws Exception {
+    public void delete(Role obj) throws Exception {
         super.delete(obj);
     }
 
